@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
     <!-- style -->
@@ -413,1069 +413,500 @@
             </div><!-- visual_slick_wrap -->
         </div>
     </section>
-    <section class="movie_chart">
-        <div id="movie_chart_inner">
-            <ul class="movie_tab">
-                <li class="on" data-tab="menu1"><a href="#">박스오피스</a></li>
-                <li data-tab="menu2"><a href="#">상영예정작</a></li>
+    <section class="movie_chart web">
+        <ul class="movie_tab">
+            <li class="active" data-tab="tab1">박스오피스</li>
+            <li data-tab="tab2">상영예정작</li>
+        </ul>
+        <!-- 첫 번째 탭 컨텐츠 -->
+        <div class="tab_content active" id="tab1">
+            <ul class="movie_slider">
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_01.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_02.jpg" alt="롱디">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_03.jpg" alt="존윅">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_04.jpg" alt="드림">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_05.jpg" alt="클로즈">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_06.jpg" alt="슬램덩크">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster_07.jpg" alt="무명">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster2-1.jpg" alt="가디언즈오브갤럭시">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <div class="movie_tab_more">
-                <a href="#">전체보기</a>
-            </div>
-            <div id="menu1" class="tabcont on">
-                <div class="mv_chart2">
-
-                    <input id="chart1" type="radio" name="tabs" checked>
-                    <label for="chart1">예매차트</label>
-
-                    <input id="chart2" type="radio" name="tabs">
-                    <label for="chart2">현재상영작</label>
-
-                    <input id="chart3" type="radio" name="tabs" checked>
-                    <label for="chart3">ICECON</label>
-
-                    <input id="chart4" type="radio" name="tabs">
-                    <label for="chart4">아트하우스</label>
-
-
-                    <section class="mv_chart2_inner" id="content1">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_01.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_01.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">스즈메의 문단속</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>40.1%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_02.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_02.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">롱디</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>12.4%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster_mobile">
-                                    <div class="poster_mobile_img">
-                                        <img src="./cgv images/우리카드.png" alt="우리카드광고">
-                                    </div>
-                                    <div class="poster_mobile_txt">
-                                        <p>우리카드</p>
-                                        <p>CGV무비차트 다음순위를 알려 드립니다.</p>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_03.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_03.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">존윅4</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>7.7%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_04.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_04.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">드림</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>7.5%</span></p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster_mobile">
-                                    <div class="poster_mobile_img">
-                                        <img src="./cgv images/가디언즈 배너.jpg" alt="우리카드광고">
-                                    </div>
-                                    <div class="poster_mobile_txt">
-                                        <p>G마켓글로벌</p>
-                                        <p>CGV무비차트 다음순위를 알려 드립니다.</p>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_05.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_05.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">클로즈</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>6.6%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_06.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_06.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">6</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">슬램덩크</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>5%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
-
-                    <section class="mv_chart2_inner" id="content2">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster_mobile">
-                                    <div class="poster_mobile_img">
-                                        <img src="./cgv images/티니핑배너.jpg" alt="티니핑">
-                                    </div>
-                                    <div class="poster_mobile_txt">
-                                        <p>뮤지컬 공연실황, 알쏭달쏭 캐치!티니핑</p>
-                                        <p>뮤지컬 공연실황, 알쏭달쏭 캐치! 티니핑<신비한 상자를 열어라!>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster2-1.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster2-1.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">가디언즈 오브 갤럭시</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>49.8%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.1</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster2-2.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster2-2.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">슈퍼 마리오 브라더스</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>7.9%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>8.7</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster2-3.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster2-3.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">2001 스페이스 오디세이</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>7.7%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>8.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster2-4.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster2-4.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">캐치!티나핑, 신비한 상자를 열어라!</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>6.5%</span></p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>7.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster_01.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster_01.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">스즈메의 문단속</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>5.6%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>9.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster2-5.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster2-5.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">6</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">블레이드 러너-더 파이널 샷</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>5%</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>5.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
-
-                    <section class="mv_chart2_inner" id="content3">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-8.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-8.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">빈 필하모닉 정기연주회-안드리스 넬슨스</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>40.1%</span> </p>
-                                        <p class="poster_d-day">D-10</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-1.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-1.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">TOMORROW x TOGETHER WORLD TOUR</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>2.4%</span> </p>
-                                        <p class="poster_d-day">D-21</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-2.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-2.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">뮤지컬 더 데빌 2021</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>1.7%</span> </p>
-                                        <p class="poster_d-day">D-3</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-3.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-3.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">뮤지컬 더 데빌 2018</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>1.5%</span></p>
-                                        <p class="poster_d-day">D-3</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-4.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-4.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">[아트&다이닝]Impressionism 인상적인 세상에 매료되다</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>6.6%</span></p>
-                                        <p class="poster_d-day">D-7</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-5.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-5.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">6</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">뮤지컬 호프</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>2%</span> </p>
-                                        <p class="poster_d-day">D-1</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster3-6.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster3-6.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">7</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">[사이다경제]결혼은 모르겠고 내 집은 갖고싶어</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>5.2%</span></p>
-                                        <p class="poster_d-day">D-9</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
-
-                    <section class="mv_chart2_inner" id="content4">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster4-1.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster4-1.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">슬픔의 삼각형</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>4.1%</span></p>
-                                        <p class="poster_d-day">D-9</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster_mobile">
-                                    <div class="poster_mobile_img">
-                                        <img src="./cgv images/간편결제매니저.png" alt="간편결제매니저">
-                                    </div>
-                                    <div class="poster_mobile_txt">
-                                        <p>간편결제매니저</p>
-                                        <p>다양하고 복잡한 ID/PW</p>
-                                        <p>휴대폰번호로간단하게!</p>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster4-2.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster4-2.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">리턴 투 서울</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>1,971</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>7.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster4-3.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster4-3.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">모리스</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>1.6만</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>5.7</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster4-4.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster4-4.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">라이스보이 슬립스</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>2.3만</span></p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>5.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster4-5.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster4-5.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">피기</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>2,660</span> </p>
-                                        <p class="poster_star"><i class="fas fa-star"></i>4.4</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
+            <div id="pager">
+                <div class="prev02">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+                <div class="next02">
+                    <i class="fas fa-chevron-circle-right"></i>
                 </div>
             </div>
-            <!----------- 상영예정작(개봉일순)--------------->
-            <div id="menu2" class="tabcont">
-                <div class="mv_chart3">
-                    <input id="chart5" type="radio" name="tabs" checked>
-                    <label for="chart5">개봉일순</label>
-
-                    <input id="chart6" type="radio" name="tabs">
-                    <label for="chart6">예매율순</label>
-                    <section class="mv_chart3_inner" id="content5">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster_mobile">
-                                    <div class="poster_mobile_img">
-                                        <img src="./cgv images/롱디배너.jpg" alt="롱디배너">
-                                    </div>
-                                    <div class="poster_mobile_txt">
-                                        <p>롱디</p>
-                                        <p>몸이 멀어지면 마음도 멀어진다??</p>
-                                        <p>장거리 연애 커플의 랜선 러브 스토리!</p>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-1.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-1.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">레드오션이 될 수 없는 '온라인쇼핑몰'로 돈버는 찐 방법!</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>4.1%</span></p>
-                                        <p class="poster_d-day">D-9</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-2.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-2.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">문재인입니다</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>1.74%</span> </p>
-                                        <p class="poster_d-day">D-11</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-3.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-3.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">토리와 로키타</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>1.65%</span> </p>
-                                        <p class="poster_d-day">D-13</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-4.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-4.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">너의 이름은</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>12.6만</span> </p>
-                                        <p class="poster_d-day">D-17</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-5.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-5.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">날씨의 아이</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">누적관객<span>21.6만</span> </p>
-                                        <p class="poster_d-day">D-19</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-6.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-6.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">6</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">그래도 내가 하지 않았어</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>0.71%</span> </p>
-                                        <p class="poster_d-day">D-23</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster5-7.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster5-7.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">7</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">바람개비</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>0.51%</span></p>
-                                        <p class="poster_d-day">D-24</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
-                    <!----------- 상영예정작(예매율순)--------------->
-                    <section class="mv_chart3_inner" id="content6">
-                        <div class="poster_slide">
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster6-1.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster6-1.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">1</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">분노의 질주-라이드 오어 다이</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>7.14%</span></p>
-                                        <p class="poster_d-day">D-21</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster6-2.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster6-2.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">2</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">메리 마이 데드 바디</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>6.52%</span> </p>
-                                        <p class="poster_d-day">D-27</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster6-3.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster6-3.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">3</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">말없는 소녀</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>4.1%</span> </p>
-                                        <p class="poster_d-day">D-3</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster6-4.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster6-4.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">4</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">칠중주-홍콩이야기</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>3.28%</span> </p>
-                                        <p class="poster_d-day">D-7</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="poster">
-                                    <img src="./cgv images/poster6-5.jpg" alt="포스터">
-                                </div>
-                                <div class="poster_pc">
-                                    <div class="poster_pc_img">
-                                        <img src="./cgv images/poster6-5.jpg" alt="포스터">
-                                    </div>
-                                    <div class="poster_pc_btn">
-                                        <a href="#"><button>예매하기</button></a>
-                                        <a href="#"><button>상세보기</button></a>
-                                    </div>
-                                </div>
-                                <div class="poster_lank">5</div>
-                                <div class="poster_txt">
-                                    <p class="poster_name">프리다의 식탁</p>
-                                    <div class="poster_txt_sub">
-                                        <p class="poster_reserve">예매율<span>2.31%</span> </p>
-                                        <p class="poster_d-day">D-15</p>
-                                    </div>
-                                    <div class="poster_btn">
-                                        <button>예매하기</button>
-                                    </div>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                            <div class="poster_slide_contents">
-                                <div class="more">
-                                    <i class="fas fa-plus"></i>
-                                    <p>더보기</p>
-                                </div>
-                            </div><!-- poster_slide_contents -->
-                        </div><!-- poster_slide -->
-                    </section>
+        </div>
+        <!-- 두 번째 탭 컨텐츠 -->
+        <div class="tab_content" id="tab2">
+            <ul class="movie_slider02">
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster2-2.jpg" alt="마리오 브라더스">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster2-3.jpg" alt="스페이스 오디세이">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster2-4.jpg" alt="캐치티니핑">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster2-5.jpg" alt="블레이드 러너">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster3-2.jpg" alt="더데빌">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster3-1.jpg" alt="라이브뷰잉">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster3-3.jpg" alt="더데빌">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="movie_img web">
+                        <img src="./cgv images/poster3-4.jpg" alt="임프레시즘">
+                    </div>
+                    <div class="movie_btn web">
+                        <div class="movie_btn_inner">
+                            <button>
+                                <a href="#none">상세보기</a>
+                            </button>
+                            <button>
+                                <a href="#none">예매하기</a>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="pager">
+                <div class="prev">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+                <div class="next">
+                    <i class="fas fa-chevron-circle-right"></i>
                 </div>
             </div>
-        </div><!-- movie_chart_inner -->
+        </div>
     </section><!-- movie_chart -->
+    <section class="movie_chart mobile">
+        <div class="mobile_tabs">
+            <div class="mobile_tab active" data-tab="mobile_tab1">#박스오피스</div>
+            <div class="mobile_tab" data-tab="mobile_tab2">#상영예정작</div>
+        </div>
+        <div class="mobile_tab-content active" id="mobile_tab1">
+            <ul>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_01.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_02.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_03.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_04.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_05.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_06.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster_07.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster2-1.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile_tab-content" id="mobile_tab2">
+            <ul>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster2-2.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster5-3.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster2-3.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster2-4.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster2-5.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster3-1.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster3-2.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="mobile_poster_img">
+                        <img src="./cgv images/poster3-3.jpg" alt="스즈메의 문단속">
+                    </div>
+                    <div class="mobile_btn">
+                        <div class="heart">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <button>
+                            <a href="#none">예매하기</a>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="event">
         <div class="event_title">
             <p>이벤트</p>
@@ -1940,13 +1371,120 @@
             </div><!-- accordian-item -->
         </div><!-- accordian_inner -->
     </section>
-
+    <footer>
+        <div class="footer_mobile">
+            <ul class="site_map">
+                <li>
+                    <a href="#none">공지사항</a>
+                </li>
+                <li>
+                    <a href="#none">고객센터</a>
+                </li>
+                <li>
+                    <a href="#none">로그인</a>
+                </li>
+                <li>
+                    <a href="#none">pc버전</a>
+                </li>
+            </ul>
+            <div class="footer_hide_inform">
+                <div class="inform_title">
+                    <p>CGV(주)</p>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="inform_inner">
+                    <p>
+                        대표이사 : 허민회
+                    </p>
+                    <p>
+                        (04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)
+                    </p>
+                    <p>
+                        통신판매업신고번호:2017-서울용산-0662
+                    </p>
+                    <p>
+                        사업자 등록번호: 104-81-45690
+                    </p>
+                    <div>
+                        <p>개인정보보호 책임자 : 조진호</p>
+                        <p>호스팅 사업자 : CJ 올리브 네트웍스</p>
+                    </div>
+                    <div>
+                        <p>대표이메일 : cjcgvmaster@cj.net</p>
+                        <p>고객센터 : 1544-1122</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="terms_map">
+                <li>
+                    <a href="#none">이용약관</a>
+                </li>
+                <li>
+                    <a href="#none">개인정보 처리방침</a>
+                </li>
+                <li>
+                    <a href="#none">위치기반서비스 이용약관</a>
+                </li>
+                <li>
+                    <a href="#none">법적고지</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_web">
+            <ul class="site_map web">
+                <li>
+                    <a href="#none">회사소개</a>
+                </li>
+                <li>
+                    <a href="#none">지속가능경영</a>
+                </li>
+                <li>
+                    <a href="#none">IR</a>
+                </li>
+                <li>
+                    <a href="#none">채용정보</a>
+                </li>
+                <li>
+                    <a href="#none">광고/출점문의</a>
+                </li>
+                <li>
+                    <a href="#none">이용약관</a>
+                </li>
+                <li>
+                    <a href="#none">편성기준</a>
+                </li>
+                <li>
+                    <a href="#none">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#none">법적고지</a>
+                </li>
+                <li>
+                    <a href="#none">윤리경영</a>
+                </li>
+                <li>
+                    <a href="#none">사이버 감사실</a>
+                </li>
+            </ul>
+            <div class="footer_logo_wrap">
+                <div class="footer_inform">
+                    <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+                    <p>대표이사 : 허민회 사업자등록번호 : 104-81-45690 통신판매업신고번호 : 2017-서울용산-0662</p>
+                    <p>호스팅사업자 : CJ올리브네트웍스 개인정보보호 책임자 : 조진호 대표이메일 : cjcgvmaster@cj.net</p>
+                    <p>CJ CGV.All Rights Reserved</p>
+                </div>
+                <div class="footer_logo">
+                    <img src="./cgv images/cgv main logo.png" alt="cgv로고">
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <a class="btn_top active" href="#"><i class="fas fa-chevron-up"></i></a>
     <a class="btn_quick active" href="#"> <img src="./cgv images/quick_button.png" alt="빠른예매버튼"></a>
     <a class="btn_quick_pc active" href="#">예매하기</a>
 
-    
+
 </body>
 
 </html>
